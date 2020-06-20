@@ -1,0 +1,1622 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.owl-ontologies.com/Ontology1569341988.owl#"
+     xml:base="http://www.owl-ontologies.com/Ontology1569341988.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#has_Been_To -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#has_Been_To">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Humanoids"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#has_Child -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#has_Child">
+        <owl:inverseOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#has_Parent"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Being"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Being"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#has_Form -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#has_Form">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Being"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Form"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#has_Given_Birth -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#has_Given_Birth">
+        <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#has_Child"/>
+        <owl:inverseOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#has_Parent"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Humanoids"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Being"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#has_Parent -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#has_Parent">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dragons"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Being"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#has_Sex -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#has_Sex">
+        <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#has_Form"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Being"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Human"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#is_Killed_By -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#is_Killed_By">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dragons"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Humanoids"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#lives_In -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#lives_In">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dragons"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#god_of -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#god_of">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Creatures"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#God"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#has_Info -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#has_Info">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dragons"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#has_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#has_Name">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Dragons"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#God"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Hero"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Human"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#has_Summary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#has_Summary">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dragons"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Being -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Being"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Cetea -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Cetea">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dragons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Cetea_Legendary -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Cetea_Legendary">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Cetea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Cetea_Mythical -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Cetea_Mythical">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Cetea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Chimaera -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Chimaera">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dragons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Creatures -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Creatures">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Being"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Dracaenae -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracaenae">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dragons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dragons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Legendary -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Legendary">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Mythical -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Mythical">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Dragons -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Dragons">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Creatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Form -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Form"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Giant -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Giant">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Humanoids"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#God -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#God">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Humanoids"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Hero -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Hero">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Humanoids"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Human -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Human">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Form"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Humanoids -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Humanoids">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Being"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Hybrid -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Hybrid">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Form"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Location -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Monster -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Monster">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Form"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Sea_Monster -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Sea_Monster">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Serpent -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Serpent">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monster"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Adrastus -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Adrastus">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Hero"/>
+        <has_Sex rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Male"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adrastus</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Apollo -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Apollo">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#God"/>
+        <has_Sex rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Male"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apollo</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Ares -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Ares">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#God"/>
+        <has_Sex rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Male"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ares</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Argos -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Argos">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Argos_and_Arcadia -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Argos_and_Arcadia">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Athena -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Athena">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#God"/>
+        <has_Sex rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Female"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Athena</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Bellerophon -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Bellerophon">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Hero"/>
+        <has_Sex rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Male"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bellerophon</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#CAMPE -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#CAMPE">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracaenae"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Woman&apos;s_upper_body,_serpent&apos;s_tail,_fifty_bestial_heads,_a_thousand_viper-feet,_serpent-hair,_scorpion-tail,_black-feathered_wings"/>
+        <is_Killed_By rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Zeus"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Tartarus"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KAMPE (Campe) was a monstrous Drakaina (She-Dragon) set by the Titan Kronos (Cronus) to guard the Hekatonkheires and Kyklopes (Cyclopes) trapped in the pit of Tartaros. Zeus slew her and freed the giants from their prison to aid him in his war against the Titanes.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRACAENA CAMPE</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAMPE (Kampe) A monstrous she-dragon which guarded the prison-gates of Tartarus. She had the body of a serpent, a hundred serpent &quot;feet,&quot; and a scorpion&apos;s tale. Campe was slain by Zeus when he rescued the Cyclopes and Hecatoncheires from their prison.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#CETEA -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#CETEA">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Cetea_Mythical"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_fish,_whale,_shark"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#The_sea"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE KETEA (Cetea) were the monsters of the sea, the two greatest of which were the Ketos (Cetus) slain by Perseus in Aithiopia (Ethiopia) and the Ketos slain by Herakles at Troy.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE SEA-MONSTERS</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CETEA (Ketea) Gigantic, serpentine sea-dragons.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#CETO -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#CETO">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracaenae"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#monster5"/>
+        <has_Parent rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Pontus"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#The_sea"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KETO (Ceto) was the goddess of the dangers of the sea and, more specifically, of sea-monsters, whales and large sharks (all called ketea in Greek). She consorted with her brother Phorkys (Phorcys) to produced a brood of fearsome monsters including--the she-dragon Ekhidna (viper), sailor-devouring Skylla (crab), the hundred-headed serpent Ladon, the one-eyed Graiai (grey ones), and the petrifying Gorgones (terrible ones).</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE GODDESS CETO</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CETO (Keto) A monstrous marine goddess with the body of a sea-dragon in place of legs. She spawned Echidna, the Hesperian dragon and other monsters.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#CHIMERA -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#CHIMERA">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Chimaera"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Lion&apos;s_body,_three-heads--of_a_lion,_goat_and_serpent"/>
+        <has_Parent rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Typhoeus"/>
+        <is_Killed_By rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Bellerophon"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Mount_Cragus_in_Lycia"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE KHIMAIRA (Chimera) was a three-headed monster which ravaged the countryside of Lykia (Lycia) in Anatolia. It was a bizarre fire-breathing creature with the body and head of a lion, a goat&apos;s head rising from its back, the udders of a goat, and a serpent for a tail.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE CHIMERA</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHIMERA (Khimaira) A three headed monster, with the foreparts of a lion, the hind-parts of a goat and goat&apos;s-head rising from its back, and the tail of a headed-serpent.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#COLCHIAN_DRACON -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#COLCHIAN_DRACON">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Mythical"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Giant_serpent"/>
+        <has_Parent rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Gaea"/>
+        <is_Killed_By rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Medea"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Colchis"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRAKON KHOLKIKOS (Colchian Dragon) was a giant, watchful serpent which guarded the Golden Fleece in the sacred grove of Ares in Kolkhis (Colchis). When Jason and the Argonauts came to fetch the fleece, the beast was either slain by the hero or put to sleep by the witch Medea. In one version of the story--preserved only in vase painting (see image right)--Jason was first devoured and disgorged by the dragon.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE COLCHIAN DRAGON</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COLCHIAN DRACON (Drakon Kholkikos) An unsleeping dragon which guarded the Golden Fleece in the sacred grove of Ares at Colchis. The creature was bewitched by Medea so that the hero Jason could steal its treasure.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#CYCHREIDES -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#CYCHREIDES">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Mythical"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Giant_serpent"/>
+        <is_Killed_By rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Cychreus"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Island_of_Salamis"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRAKON KYKHREIDES (Dragon Cychreides) was a giant serpent which terrorised the island of Salamis. According to some it was slain by King Kykhreus (Cychreus). In other accounts the king raised the beast and it was instead driven from the island by the hero Eurylokhos (Eurylochus). The serpent then swam across the sea to Eleusis where it became a familiar of the goddess Demeter.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRAGON CYCHREIDES</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CYCHREIDES (Kykhreides) A dragon which terrorized the island of Salamis. It driven out by the hero Cychreus and fled to Eleusis where it became an attendant of the goddess Demeter.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Cadmus -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Cadmus">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Hero"/>
+        <has_Sex rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Male"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cadmus</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Capaneus -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Capaneus">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Hero"/>
+        <has_Sex rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Male"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Capaneus</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Celeus -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Celeus">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Hero"/>
+        <has_Sex rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Male"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Celeus</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Ceto -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Ceto">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracaenae"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ceto</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Colchis -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Colchis">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Coroebus -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Coroebus">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Hero"/>
+        <has_Sex rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Male"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coroebus</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Crataeis -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Crataeis">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Creatures"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_Titan"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crataeis</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Cychreus -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Cychreus">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Creatures"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_Titan"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cychreus</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Damasen -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Damasen">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Creatures"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_Titan"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Damasen</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Delphi_in_Phocis -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Delphi_in_Phocis">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#ECHIDNA -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#ECHIDNA">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracaenae"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Woman&apos;s_upper_body,_serpent&apos;s_tail"/>
+        <has_Parent rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Phorcys"/>
+        <is_Killed_By rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Apollo"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Land_of_the_Arimaspians"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EKHIDNA (Echidna) was a monstrous she-dragon (drakaina) with the head and breast of a woman and the tail of a coiling serpent. She probably represented the corruptions of the earth--rot, slime, fetid waters, illness and disease.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRACAENA ECHIDNA</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECHIDNA (Ekhidna) The she-dragon wife of the serpent-giantTyphoeus. Echidna spawned most of the dragons and monsters of myth.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#ECHIDNA_ARGIA -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#ECHIDNA_ARGIA">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracaenae"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Woman&apos;s_upper_body,_serpent&apos;s_tail"/>
+        <has_Parent rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Styx"/>
+        <is_Killed_By rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Argus%20Panoptes"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Argos_and_Arcadia"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EKHIDNA ARGIA (Argive Echidna) was a Drakaina (She-Dragon) with the upper body of a woman and the tail of a serpent who murdered travellers throughout the lands of Argos and Arkadia. She was eventually slain by the hundred-eyed giant Argos Panoptes. Ekhidna&apos;s parents were Peiras, a son of the king of Argos, and Styx, the nymphe of a poisonous Arkadian stream.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRACAENA ECHIDNA ARGIA</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECHIDNA ARGIA (Ekhidna Argia) A she-dragon which ravaged the kgindom of Argos. It was slain by the hundred-eyed giant Argos Panoptes.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#ETHIOPIAN_CETUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#ETHIOPIAN_CETUS">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Cetea_Mythical"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_fish_or_sea-dragon"/>
+        <is_Killed_By rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Perseus"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#The_Red_Sea"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE KETOS AITHIOPIOS (Cetus Aethiopius) was a sea-monster sent by Poseidon to ravage the land of Aithiopia (Ethiopia) as punishment for Queen Kassiopeia&apos;s (Cassiopeia&apos;s) hubristic boast that her daughter Andromeda was more beautiful than the Nereides. To assuage the wrath of the sea-gods, the girl was chained to a rock as a sacrificial feast for the monster. It was at this time that Perseus was winging his way back to Greece with the head of Medousa (Medusa). He spied the girl, flew down, slew the monster and carried her off as his bride. Some say the hero turned the monster to stone--a rock near the Lebanese town of Joppa frequented by ancient tourists.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ETHIOPIAN SEA-MONSTER</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ETHIOPIAN CETUS (Ketos Aithiopios) A sea-monster sent by Poseidon to ravage the land of the Aethiopians. The king offered ihis daughter Andromeda to it as a sacrifice. But Perseus slew the beast and released the princess from her chains.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#ETHIOPIAN_DRACONES -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#ETHIOPIAN_DRACONES">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Legendary"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Giant_serpent"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Ethiopia"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRAKON AITHIOPIKOS (Ethiopian Dragon) was a breed of giant serpent native to the lands of Aithiopia (sub-Saharan Africa).</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE ETHIOPIAN DRAGON</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ETHIOPIAN DRACONES (Drakones Aithiopikoi) Giant serpents which inhabited the land of Aethiopia (that is, sub-Saharan Africa).</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Eleusis -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Eleusis">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Ethiopia -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Ethiopia">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Female -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Female">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Human"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#GIGANTOMACHIAN_DRACON -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#GIGANTOMACHIAN_DRACON">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Mythical"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Giant_serpent"/>
+        <is_Killed_By rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Athena"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Pallene_in_Thrace"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRAKON GIGANTOMAKHIOS (Dragon of the Giant-War) was a huge serpent thrown at the goddess Athena by the giants. She caught it up and impaled it upon the pole of heaven to form the constellation Draco.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE GIANT-WAR DRAGON</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GIGANTOMACHIAN DRACON (Drakon Gigantomakhios) A dragon which was cast at the goddess Athena during the Giant War. She caught it up and threw it into the sky where it formed the constellation Draco.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Gaea -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Gaea">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#God"/>
+        <has_Sex rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Female"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gaea</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Garden_of_the_Hesperides -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Garden_of_the_Hesperides">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Giant_sea-serpents -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Giant_sea-serpents">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Sea_Monster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Giant_serpent -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Giant_serpent">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Serpent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Giant_serpents -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Giant_serpents">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Serpent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#HESPERIAN_DRACON -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#HESPERIAN_DRACON">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Mythical"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Hundred-headed_serpent"/>
+        <has_Parent rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Phorcys"/>
+        <is_Killed_By rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Heracles"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Garden_of_the_Hesperides"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRAKON HESPERION (Hesperian Dragon) was a hundred-headed serpent named Ladon tasked with guarding the golden apples of the Hesperides and tormenting the heavens-bearing Titan Atlas. The creature was slain by Herakles when he was sent to recover the golden apples as one of his twelve labours. It was afterwards placed amongst the stars by the gods as the Constellation Draco encircling the north pole.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE HESPERIAN DRAGON</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HESPERIAN DRACON (Drakon Hesperios) A hundred-headed dragon which guarded the golden apples of the Hesperides. It was slain by Heracles when he came to fetch the treasure as one of his Twelve Labors.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#HYDRA -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#HYDRA">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Mythical"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Nine-headed_serpent"/>
+        <has_Parent rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Typhoeus"/>
+        <is_Killed_By rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Heracles"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Spring_of_Lerna_in_Argolis"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HYDRA LERNAIA (Lernaean Hydra) was a gigantic, nine-headed water-serpent, which haunted the swamps of Lerna. Herakles (Heracles) was sent to destroy her as one of his twelve labours, but for each of her heads that he decapitated, two more sprang forth. So with the help of Iolaos (Iolaus), he applied burning brands to the severed stumps, cauterizing the wounds and preventing the regeneration. In the battle he also crushed a giant crab beneath his heel which had come to assist the Hydra.
+The Hydra and the Crab were afterwards placed amongst the stars by Hera as the Constellations Hydra and Cancer.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE LERNAEAN HYDRA</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HYDRA A nine headed water-dragon which guarded the springs of Lerna. It possessed the power of regeneration, producing two new heads for each that was decapitated. The creature was eventually destroyed by Heracles who cauterized its neck stumps with a flaming torch.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Hellespont_Sea -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Hellespont_Sea">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Heracles -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Heracles">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Hero"/>
+        <has_Sex rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Male"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heracles</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Hundred-headed_serpent -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Hundred-headed_serpent">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Serpent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#INDIAN_CETEA -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#INDIAN_CETEA">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Cetea_Legendary"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Fish-tailed_lion,_leopard,_wolf,_ram,_etc."/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Indian_Ocean"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE KETEA INDIKOI (Indian Cetea) were fabulous, multi-formed sea-monsters believed to inhabit the Indian Ocean. They had the foreparts of land animals--such as lions, leopards, rams and wolves--and the serpentine tails of fish.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INDIAN SEA-MONSTERS</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INDIAN CETEA (Ketea Indikoi) Fabulous sea-monsters believed to inhabit the Indian Ocean.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#INDIAN_DRACONES -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#INDIAN_DRACONES">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Legendary"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Giant_serpent"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#India"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRAKON INDIKOS (Indian Dragon) was a breed of giant, toothed serpent which preyed on the elephants of India.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE INDIAN DRAGON</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INDIAN DRACONES (Drakones Indikoi) Dragons found in the hills and mountains of India. They devoured elephants and were destroyed by Indian dragon-slayers with the aid of magic.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#ISMENIAN_DRACON -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#ISMENIAN_DRACON">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Mythical"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Giant_serpent"/>
+        <has_Parent rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Ares"/>
+        <is_Killed_By rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Cadmus"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Ismenian_Spring_in_Boeotia"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRAKON ISMENIOS (Ismenian dragon) was a giant serpent which guarded the sacred spring of Ares near Thebes. When the hero Kadmos (Cadmus) arrived seeking to found the city, he slew the monster with a heavy stone. The goddess Athena then instructed him to sow the dragon&apos;s teeth, producing a crop of fully-grown, armed warriors called Spartoi (Sparti), five of which became the ancestral lords of Thebes. Ares later avenged his draconic son by transforming Kadmos and his wife into serpents.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE ISMENIAN DRAGON</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISMENIAN DRACON (Drakon Ismenios) A dragon which guarded the sacred spring of Ares near Thebes. It was slain by the hero Cadmus who sowed its teeth in the earth to reap a crop of earth-born warriors.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#India -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#India">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Indian_Ocean -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Indian_Ocean">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Island_of_Rhodes -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Island_of_Rhodes">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Island_of_Salamis -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Island_of_Salamis">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Ismenian_Spring_in_Boeotia -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Ismenian_Spring_in_Boeotia">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Jason -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Jason">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Hero"/>
+        <has_Sex rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Male"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jason</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Land_of_the_Arimaspians -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Land_of_the_Arimaspians">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Male -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Male">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Human"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Medea -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Medea">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Hero"/>
+        <has_Sex rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Female"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medea</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Menestratus -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Menestratus">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Creatures"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_Titan"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Menestratus</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Metanira -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Metanira">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Hero"/>
+        <has_Sex rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Female"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metanira</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_Titan -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_Titan">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_fish -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_fish">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Sea_Monster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_fish_or_sea-dragon -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_fish_or_sea-dragon">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Sea_Monster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_serpent -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_serpent">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Serpent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Mount_Cragus_in_Lycia -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Mount_Cragus_in_Lycia">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#NEMEAN_DRACON -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#NEMEAN_DRACON">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Mythical"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_serpent"/>
+        <has_Parent rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Gaea"/>
+        <is_Killed_By rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Capaneus"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Nemea_in_Argolis"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAMILY OF THE DRAGON</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE NEMEAN DRAGON</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEMEAN DRACON (Drakon Nemeios) A giant dragon or serpent which guarded the sacred groves of Zeus at Nemea. It was destroyed by the warriors of the Seven Against Thebes after devouring the infant Opheltes, son of a local king.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Near_Troy_in_Mysia -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Near_Troy_in_Mysia">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Nemea_in_Argolis -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Nemea_in_Argolis">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Nine-headed_serpent -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Nine-headed_serpent">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Serpent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#OPHIOGENEAN_DRACON -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#OPHIOGENEAN_DRACON">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Mythical"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#monster4"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#location3"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRAKON OPHIOGENEIKOS (Dragon of the Serpent-Born) was a giant serpent which guarded a sacred grove of the goddess Artemis in north-eastern Mysia. It impregnated a maiden named Halia when she was visiting the shrine and she birthed Ophiogenes &quot;the Serpent-Born&quot;, ancestor of the Ophiogenees tribe.</has_Info>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPHIOGENEAN DRACON (Drakon Ophiogeneikos) A dragon which guarded the sacred grove of the goddess Artemis in Mysia. It mated with the maiden Halia, producing a son named Ophiogeneis, ancestor of the Ophiogenes tribe.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#PHRYGIAN_DRACONES -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#PHRYGIAN_DRACONES">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Legendary"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Giant_serpent"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Phrygia_in_Anatolia"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRAKON PHRYGIOS (Phrygian Dragon) was a breed of giant serpent thought to inhabit the Phrygian highlands of central Anatolia. During the day they stood on the tips of their tails attracting birds with their magical breath and at night they ambushed shepherds returning from the hills with their flocks.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE PHRYGIAN DRAGON</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PHRYGIAN DRACONES (Drakones Phrygioi) Sixty foot tall dragons found in central Anatolia. They stood upright on their tails in the air, snaring birds with a magical breath.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#PITANIAN_DRACON -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#PITANIAN_DRACON">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Mythical"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#monster1"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#location1"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRAKON PITANIOS (Pitanean Dragon) was a giant serpent turned to stone by the gods in the region of Pitane in Aiolia, Anatolia. There was no doubt some local legend about the creature which described this metamorphosis.</has_Info>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PITANIAN DRACON (Drakon Pitanios) A dragon of Pitane in Aeolia (Asia Minor) which was turned to stone by the gods.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#POENE -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#POENE">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracaenae"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Woman&apos;s_upper_body,_serpent&apos;s_tail"/>
+        <is_Killed_By rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Coroebus"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Argos"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POINE (Poene) was a monstrous Drakaina (She-Dragon) summoned from the underworld by the god Apollon to punish the Argives for the cruel death of his infant son Linos. She was eventually slain by the hero Koroibos (Coroebus).</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRACAENA POENA</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POENE (Poine) A she-dragon sent by Apollo to ravage the kingdom of Argos as punishment for the death of his infant son Linos. It was slain by the hero Coraebus.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#PYTHON -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#PYTHON">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Mythical"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Giant_serpent"/>
+        <has_Parent rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Gaea"/>
+        <is_Killed_By rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Apollo"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Delphi_in_Phocis"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PYTHON was a monstrous dragon-serpent set by Gaia (the Earth) to guard the sacred oracle of Delphoi (Delphi). According to some the creature was born from the rotting slime left behind by the Great Deluge. When the god Apollon laid claim to the shrine, he slew Python with a volley of a hundred arrows. The oracle and festival of Delphoi were afterwards named Pytho and Pythian from the rotting (pythô) corpse of the beast. Some say Apollon slew the monster to avenge his mother Leto who had been relentlessly pursued by the dragon during her long pregnancy.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRACAENA PYTHON</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PYTHON A monstrous dragon which was set by Gaea to guard the oracle of Delphi. It was destroyed by the god Apollo when he seized the shrine.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Pallene_in_Thrace -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Pallene_in_Thrace">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Peiras -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Peiras">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Creatures"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_Titan"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peiras</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Perseus -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Perseus">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Hero"/>
+        <has_Sex rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Male"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perseus</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Phorbas -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Phorbas">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Hero"/>
+        <has_Sex rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Male"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phorbas</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Phorcys -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Phorcys">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Creatures"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_Titan"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phorcys</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Phrygia_in_Anatolia -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Phrygia_in_Anatolia">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Pontus -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Pontus">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Creatures"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_Titan"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pontus</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#RHODIAN_DRACONES -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#RHODIAN_DRACONES">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Mythical"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Giant_serpents"/>
+        <is_Killed_By rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Phorbas"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Island_of_Rhodes"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRAKONES RHODIOI (Dragons of Rhodes) were giant serpents which terrorised the island of Rhodes. They were slain by the hero Phorbas who, along with the greatest of the serpents, was set amongst the stars as the constellation Ophiochus.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE RHODIAN DRAGONS</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RHODIAN DRACONES (Drakones Rhodioi) Giant serpents and dragons which ravaged the island of Rhodes. They were destroyed by the hero Phorbas.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#River_Hermus_in_Lydia -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#River_Hermus_in_Lydia">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#River_Sagaris_in_Lydia -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#River_Sagaris_in_Lydia">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#SCOLOPENDRA -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#SCOLOPENDRA">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Cetea_Legendary"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Ship-sized_sea-monster,_hairy_nostrils,_crayfish-like_tail,_webbed_feet"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Sea"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE SKOLOPENDRA (Scolopendra) was gargantuan sea-monster with hairy nostrils, a flat, crayfish-like tail and webbed feet lining its flanks.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE SCOLOPENDRA</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCOLOPENDRA (Skolopendra) A gargantuan sea-monster with hair extending from its nostrils, a flat crayfish-like tail and rows of webbed feet lining each of its flanks.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#SCYLLA -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#SCYLLA">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracaenae"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Upper_body_of_woman,_tail_of_fish,_circle_of_six_dog-heads"/>
+        <has_Parent rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Crataeis"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Straits_of_Messina"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SKYLLA (Scylla) was a sea-monster who haunted the rocks of a narrow strait opposite the whirlpool of Kharybdis (Charybdis). Ships who sailed too close to her rocks would lose six men to her ravenous, darting heads.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE MONSTER SCYLLA</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCYLLA (Skylla) A she-dragon which haunted the Straits of Messina, snatching and devouring sailors from passing ships. She was a nymph with the tail of a sea-monster in place of legs.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#SCYTHIAN_DRACAENA -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#SCYTHIAN_DRACAENA">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracaenae"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Woman&apos;s_upper_body,_serpent&apos;s_tail"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Scythia"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRAKAINA SKYTHIA (Scythian Dracaena) was the first ruler of the land of Skythia. She was a woman from the waist up with the tail of a serpent in place of legs. When Herakles was travelling through her realm with the cattle of Geryon, she stole some of the herd and insisted the hero mate with her before she would return them. He did so and through her became the ancestor of a line of Skythian kings.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRACAENA SCYTHIA</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCYTHIAN DRACAENA (Drakaina Skythia) The Dracaena queen of Scythia in north-eastern Europe (now, the Ukraine). She stole the cattle of Geryon which Heracles was herding through the region and agreed to return them on condition he mate with her.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Scythia -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Scythia">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Sea -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Sea">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Spring_of_Lerna_in_Argolis -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Spring_of_Lerna_in_Argolis">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Straits_of_Messina -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Straits_of_Messina">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Styx -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Styx">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#God"/>
+        <has_Sex rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Female"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Styx</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#THESPIAN_DRACON -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#THESPIAN_DRACON">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Mythical"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Giant_serpent"/>
+        <is_Killed_By rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Menestratus"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Thespiae_in_Boeotia"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRAKON THESPIAKOS (Thespian Dragon) was a monstrous serpent which ravaged the land of Thespiai (Thespiae) in Boiotia (Central Greece). It was destroyed through the sacrifice of the hero Menestratos who leapt between the jaws of the beast wearing a spiked breastplate.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE THESPIAN DRAGON</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THESPIAN DRACON (Drakon Thespiakos) A dragon which plagued the Boeotian town of Thespaie. It was slain by the hero Menestratus, who threw himself into the creatures maw wrapped in spiked armour.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#TROJAN_CETUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#TROJAN_CETUS">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Cetea_Mythical"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_fish"/>
+        <has_Parent rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Phorcys"/>
+        <is_Killed_By rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Heracles"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Hellespont_Sea"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE KETOS TROIAS (Trojan Cetus) was a giant sea-monster sent by Poseidon to plague the land of Troy as punishment for King Laomedon&apos;s refusal to pay him for the building of the city&apos;s walls. An oracle declared that the only way to be rid of the beast was to offer the king&apos;s daughter as sacrifice. Laomedon did so, chaining Hesione to the rocks, where she was rescued by Herakles who despatched the beast with a fish-hook or volley of arrows. The creature was probably associated with the constellation Cetus.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TROJAN SEA-MONSTER</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TROJAN CETUS (Ketos Troios) A sea-monster which plauged the land of the Trojans. King Laomedon chained his daughter to the rocks as a sacrifice to appease the creature, but she was \rescued by Heracles and the creature slain.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#TROJAN_DRACONES -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#TROJAN_DRACONES">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Mythical"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Giant_sea-serpents"/>
+        <has_Parent rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Typhoeus"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Near_Troy_in_Mysia"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRAKONES TROIADES (Trojan Dragons) were two huge sea-serpents summoned from the deep by the goddess Athena to slay the Trojan seer Laokoon (Laocoon) when he tried to warn the Trojans of the ruse of the Wooden Horse.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE TROJAN DRAGONS</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TROJAN DRACONES (Drakones Troiades) A pair of dragons sent by the god Poseidon to destroy Laocoon of Troy and his sons when he attempted to warn his people of the threat posed by the Wooden Horse.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Tartarus -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Tartarus">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#The_Red_Sea -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#The_Red_Sea">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#The_sea -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#The_sea">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Thespiae_in_Boeotia -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Thespiae_in_Boeotia">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Typhoeus -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Typhoeus">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Creatures"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_Titan"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Argus Panoptes</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Zeus -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Zeus">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#God"/>
+        <has_Sex rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Male"/>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zeus</has_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#location1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#location1">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#location2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#location2">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#location3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#location3">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#monster1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#monster1">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#monster2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#monster2">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#monster3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#monster3">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#monster4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#monster4">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#monster5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#monster5">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Argus%20Panoptes -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Argus%20Panoptes">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Creatures"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_Titan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#DEMETER&apos;S_DRACONES -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#DEMETER&apos;S_DRACONES">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Mythical"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#monster3"/>
+        <has_Parent rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Metanira"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Eleusis"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TRIPTOLEMOS (Triptolemus) was a demi-god of the Eleusinian mysteries who presided over the sowing of grain-seed and the milling of wheat.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEMI-GOD TRIPTOLEMUS</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEMETER&apos;S DRACONES A pair of winged dragons which drew the chariot of goddess Demeter. She gave them to the hero Triptolemos to carry him across the world spreading knowledge of agriculture.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Fish-tailed_lion,_leopard,_wolf,_ram,_etc. -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Fish-tailed_lion,_leopard,_wolf,_ram,_etc.">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Hybrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Lion&apos;s_body,_three-heads&#45;&#45;of_a_lion,_goat_and_serpent -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Lion&apos;s_body,_three-heads--of_a_lion,_goat_and_serpent">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Hybrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#MAEONIAN_DRACON_(1) -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#MAEONIAN_DRACON_(1)">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Mythical"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Giant_serpent"/>
+        <is_Killed_By rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Heracles"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#River_Sagaris_in_Lydia"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRAKON MAIONIOS (Lydian Dragon) was a giant serpent which ravaged the Anatolian kingdom of Lydia (Maionia). It was slain by Herakles in the service of Queen Omphale. The hero&apos;s victory was afterwards memorialised amongst the stars as the constellation Ophiochus.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE LYDIAN DRAGON</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAEONIAN DRACON (1) (Drakon Maionios) A dragon which ravaged the kingdom of Lydia. It was slain by Heracles when he was in the service of Queen Omphale.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#MAEONIAN_DRACON_(2) -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#MAEONIAN_DRACON_(2)">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Mythical"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Giant_serpent"/>
+        <is_Killed_By rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Damasen"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#River_Hermus_in_Lydia"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRAKON MAIONIOS (Lydian Dragon) was a giant serpent of the River Hermos in Lydia, Anatolia. It was slain by the hero Damasen but its mate used a magical herb to restore it to life.</has_Info>
+        <has_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE LYDIAN DRAGON</has_Name>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAEONIAN DRACON (2) (Drakon Maionios) A monstrous dragon which terrorized the kingdom of Lydia. It was slain by the giant Damasen.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#MEDEA&apos;S_DRACONES -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#MEDEA&apos;S_DRACONES">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Dracones_Mythical"/>
+        <has_Form rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#monster2"/>
+        <lives_In rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#location2"/>
+        <has_Info rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE DRAKONES OF MEDEA were a pair of serpents which drew the flying chariot of the witch Medea. She summoned them to carry her away from Korinthos (Corinth) following the murder of King Kreon (Creon), his daughter Glauke (Glauce) and her children by Iason (Jason).</has_Info>
+        <has_Summary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MEDEA&apos;S DRACONES Two flying dragons born from the blood of the vanquished Titans. They were yoked to draw the chariot of the witch Medea.</has_Summary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_fish,_whale,_shark -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Monstrous_fish,_whale,_shark">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Sea_Monster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Ship-sized_sea-monster,_hairy_nostrils,_crayfish-like_tail,_webbed_feet -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Ship-sized_sea-monster,_hairy_nostrils,_crayfish-like_tail,_webbed_feet">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Sea_Monster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Upper_body_of_woman,_tail_of_fish,_circle_of_six_dog-heads -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Upper_body_of_woman,_tail_of_fish,_circle_of_six_dog-heads">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Sea_Monster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Woman&apos;s_upper_body,_serpent&apos;s_tail -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Woman&apos;s_upper_body,_serpent&apos;s_tail">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Serpent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1569341988.owl#Woman&apos;s_upper_body,_serpent&apos;s_tail,_fifty_bestial_heads,_a_thousand_viper-feet,_serpent-hair,_scorpion-tail,_black-feathered_wings -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#Woman&apos;s_upper_body,_serpent&apos;s_tail,_fifty_bestial_heads,_a_thousand_viper-feet,_serpent-hair,_scorpion-tail,_black-feathered_wings">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#Serpent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1569341988.owl#l">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hero Has Been To ___</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#is_Killed_By"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#x"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#lives_In"/>
+                                <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#x"/>
+                                <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#l"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#has_Been_To"/>
+                        <swrl:argument1 rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#y"/>
+                        <swrl:argument2 rdf:resource="http://www.owl-ontologies.com/Ontology1569341988.owl#l"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
